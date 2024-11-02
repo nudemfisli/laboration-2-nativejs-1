@@ -17,7 +17,7 @@
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Makeup</a>
+                <a class="navbar-brand" href="#">Makeup Store</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -78,22 +78,22 @@
                     <div class="carousel-item active">
                         <img
                             class="d-block w-100"
-                            src="..."
-                            alt="First slide"
+                            src="images/lipstick.png"
+                            alt="Text about new lip plumpers from Maybelline to the left, image of lip plumbers to the right"
                         />
                     </div>
                     <div class="carousel-item">
                         <img
                             class="d-block w-100"
-                            src="..."
-                            alt="Second slide"
+                            src="/images/salemakeup.webp"
+                            alt="Products with giftbox and a sale sign"
                         />
                     </div>
                     <div class="carousel-item">
                         <img
                             class="d-block w-100"
-                            src="..."
-                            alt="Third slide"
+                            src="/images/makeupglitter.png"
+                            alt="Woman with silver glitter on eyebrows and lips"
                         />
                     </div>
                 </div>
@@ -125,6 +125,7 @@
         </section>
         <!-- NEW ARRIVALS -->
         <section id="new-arrivals-container">
+            <h1>New Arrivals</h1>
             <div class="product-list" id="product-list">
                 <div class="product-item">
                     <img src="image_link_1.jpg" alt="Product Name 1" />
@@ -148,9 +149,10 @@
         </section>
         <section class="discount-now">
             <!-- DISCOUNT - ADD IMAGES HERE-->
-            <img src="..." alt="" />
-            <img src="..." alt="" />
+            <img src="images/makeupglitter.png" alt="" />
+            <img src="images/makeupglitter.png" alt="" />
         </section>
+        <!-- SHOP BY BRAND -->
         <section class="shop-by-brands">
             <h2>Shop by Brand</h2>
             <div class="brand-list" id="brand-list"></div>
@@ -161,35 +163,40 @@
                 <p>&copy; 2024 Makeup Store. All rights reserved.</p>
 
                 <div class="footer-links">
-                    <h4>Customer Service</h4>
-                    <ul class="services-list">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
-                        <li><a href="#">Shipping Information</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                </div>
+                    <div class="services">
+                        <h4>Customer Service</h4>
+                        <ul class="services-list">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="#">Shipping Information</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
 
-                <div class="social-media">
-                    <h4>Social Media</h4>
-                    <ul class="social-list">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                </div>
+                    <div class="social-media">
+                        <h4>Social Media</h4>
+                        <ul class="social-list">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
 
-                <div class="legal">
-                    <h4>Legal</h4>
-                    <ul class="legal-list">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Accessability</a></li>
-                    </ul>
+                    <div class="legal">
+                        <h4>Legal</h4>
+                        <ul class="legal-list">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Accessability</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
+        <!-- BACK TO TOP -->
+        <button id="myBtn" title="Go to top">&#8679;</button>
+        <script src="fetchData.js" type="module"></script>
     </body>
 </html>
