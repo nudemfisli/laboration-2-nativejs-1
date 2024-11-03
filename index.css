@@ -3,6 +3,24 @@
     color: black;
 }
 
+/* NAVIGATION BAR */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 0;
+}
+
+/* CAROUSEL BANNER */
 #banner-carousel {
     width: 100%;
     overflow: hidden;
@@ -19,6 +37,15 @@
     object-fit: cover;
 }
 
+.carousel-control-prev {
+    margin-left: -80px;
+}
+
+.carousel-control-next {
+    margin-right: -80px;
+}
+
+/* NEW ARRIVALS */
 h1 {
     text-align: center;
     padding-top: 1rem;
@@ -35,18 +62,21 @@ h1 {
     margin-top: 2rem;
 }
 
+/* DISCOUNT IMAGE */
 .discount-now {
     display: flex;
     flex-direction: row;
     margin-top: 5rem;
 }
 
+/* BRANDS */
 .shop-by-brands {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
 }
 
+/* FOOTER */
 .footer {
     list-style-type: none;
     margin-top: 5rem;
@@ -58,6 +88,7 @@ h1 {
     list-style-type: none;
     align-items: center;
     font-size: 1rem;
+    padding-left: 1rem;
 }
 
 .footer-links {
@@ -81,6 +112,7 @@ h1 {
     list-style-type: none;
 }
 
+/* BACK TO TOP BUTTON */
 #myBtn {
     position: fixed;
     bottom: 10px;
