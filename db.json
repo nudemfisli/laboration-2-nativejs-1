@@ -4,145 +4,169 @@
             "id": 1,
             "name": "Lipstick 1",
             "price": 12.99,
-            "image_link": "http://localhost:3000/lipstickp1.jpg"
+            "image_link": "/images/lipstickp3.jpg",
+            "category": "lipstick"
         },
         {
             "id": 2,
             "name": "Lipstick 2",
             "price": 14.99,
-            "image_link": "http://localhost:3000/lipstickp2.jpg"
+            "image_link": "/images/lipstickp3.jpg",
+            "category": "lipstick"
         },
         {
             "id": 3,
             "name": "Lipstick 3",
             "price": 13.49,
-            "image_link": "http://localhost:3000/lipstickp3.jpg"
+            "image_link": "/images/lipstickp3.jpg",
+            "category": "lipstick"
         },
         {
             "id": 4,
             "name": "Lipstick 4",
             "price": 11.99,
-            "image_link": "http://localhost:3000/lipstickp4.jpg"
+            "image_link": "/images/lipstickp3.jpg",
+            "category": "lipstick"
         },
         {
             "id": 5,
             "name": "Lipstick 5",
             "price": 15.99,
-            "image_link": "http://localhost:3000/lipstickp5.jpg"
+            "image_link": "http://localhost:3000/lipstickp5.jpg",
+            "category": "lipstick"
         },
         {
             "id": 6,
             "name": "Lipstick 6",
             "price": 10.99,
-            "image_link": "http://localhost:3000/lipstickp6.jpg"
+            "image_link": "http://localhost:3000/lipstickp6.jpg",
+            "category": "lipstick"
         },
         {
             "id": 7,
             "name": "Lipstick 7",
             "price": 12.49,
-            "image_link": "http://localhost:3000/lipstickp7.jpg"
+            "image_link": "http://localhost:3000/lipstickp7.jpg",
+            "category": "lipstick"
         },
         {
             "id": 8,
             "name": "Lipstick 8",
             "price": 9.99,
-            "image_link": "http://localhost:3000/lipstickp8.jpg"
+            "image_link": "http://localhost:3000/lipstickp8.jpg",
+            "category": "lipstick"
         },
         {
             "id": 9,
             "name": "Foundation 1",
             "price": 25.99,
-            "image_link": "http://localhost:3000/foundation1.jpg"
+            "image_link": "http://localhost:3000/foundation1.jpg",
+            "category": "foundation"
         },
         {
             "id": 10,
             "name": "Foundation 2",
             "price": 27.49,
-            "image_link": "http://localhost:3000/foundation2.jpg"
+            "image_link": "http://localhost:3000/foundation2.jpg",
+            "category": "foundation"
         },
         {
             "id": 11,
             "name": "Foundation 3",
             "price": 24.99,
-            "image_link": "http://localhost:3000/foundation3.jpg"
+            "image_link": "http://localhost:3000/foundation3.jpg",
+            "category": "foundation"
         },
         {
             "id": 12,
             "name": "Foundation 4",
             "price": 22.99,
-            "image_link": "http://localhost:3000/foundation4.jpg"
+            "image_link": "http://localhost:3000/foundation4.jpg",
+            "category": "foundation"
         },
         {
             "id": 13,
             "name": "Foundation 5",
             "price": 26.99,
-            "image_link": "http://localhost:3000/foundation5.jpg"
+            "image_link": "http://localhost:3000/foundation5.jpg",
+            "category": "foundation"
         },
         {
             "id": 14,
             "name": "Foundation 6",
             "price": 21.49,
-            "image_link": "http://localhost:3000/foundation6.jpg"
+            "image_link": "http://localhost:3000/foundation6.jpg",
+            "category": "foundation"
         },
         {
             "id": 15,
             "name": "Foundation 7",
             "price": 23.49,
-            "image_link": "http://localhost:3000/foundation7.jpg"
+            "image_link": "http://localhost:3000/foundation7.jpg",
+            "category": "foundation"
         },
         {
             "id": 16,
             "name": "Foundation 8",
             "price": 20.99,
-            "image_link": "http://localhost:3000/foundation8.jpg"
+            "image_link": "http://localhost:3000/foundation8.jpg",
+            "category": "foundation"
         },
         {
             "id": 17,
             "name": "Mascara 1",
             "price": 10.99,
-            "image_link": "http://localhost:3000/mascara1.jpeg"
+            "image_link": "http://localhost:3000/mascara1.jpeg",
+            "category": "mascara"
         },
         {
             "id": 18,
             "name": "Mascara 2",
             "price": 12.49,
-            "image_link": "http://localhost:3000/mascara2.jpg"
+            "image_link": "http://localhost:3000/mascara2.jpg",
+            "category": "mascara"
         },
         {
             "id": 19,
             "name": "Mascara 3",
             "price": 11.99,
-            "image_link": "http://localhost:3000/mascara3.jpg"
+            "image_link": "http://localhost:3000/mascara3.jpg",
+            "category": "mascara"
         },
         {
             "id": 20,
             "name": "Mascara 4",
             "price": 9.99,
-            "image_link": "http://localhost:3000/mascara4.jpg"
+            "image_link": "http://localhost:3000/mascara4.jpg",
+            "category": "mascara"
         },
         {
             "id": 21,
             "name": "Mascara 5",
             "price": 13.99,
-            "image_link": "http://localhost:3000/mascara5.jpg"
+            "image_link": "http://localhost:3000/mascara5.jpg",
+            "category": "mascara"
         },
         {
             "id": 22,
             "name": "Mascara 6",
             "price": 14.49,
-            "image_link": "http://localhost:3000/mascara6.jpg"
+            "image_link": "http://localhost:3000/mascara6.jpg",
+            "category": "mascara"
         },
         {
             "id": 23,
             "name": "Mascara 7",
             "price": 8.99,
-            "image_link": "http://localhost:3000/mascara7.jpg"
+            "image_link": "http://localhost:3000/mascara7.jpg",
+            "category": "mascara"
         },
         {
             "id": 24,
             "name": "Mascara 8",
             "price": 10.49,
-            "image_link": "http://localhost:3000/mascara8.jpg"
+            "image_link": "http://localhost:3000/mascara8.jpg",
+            "category": "mascara"
         }
     ]
 }

@@ -119,3 +119,16 @@ h1 {
     right: 10px;
     display: none;
 }
+
+#shop-by-category {
+    display: flex;
+    flex-direction: row;
+}
+/* .tom-div {
+    width: 100%; /* sätt bredden
+height: 300px; /* sätt höjden
+background-image: url('path/to/your-image.jpg');
+background-size: cover; /* täcker hela divens yta
+background-position: center; /* centrerar bilden
+background-repeat: no-repeat; /* förhindrar att bilden upprepas
+} */

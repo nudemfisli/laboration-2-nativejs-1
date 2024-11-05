@@ -2,30 +2,30 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchNewArrivals();
 });
 
-function fetchNewArrivals() {
-    fetch('http://localhost:3000/products')
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then((data) => {
-            console.log('Fetched data:', data);
-            displayProducts(data);
-        })
-        .catch((error) => {
-            console.error('Error fetching data:', error);
-        });
+async function fetchNewArrivals() {
+    console.log('fetchNewArrivals körs');
+    try {
+        const response = await fetch('http://localhost:3000/products');
+        if (!response.ok) {
+            throw newError(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Fetched data:', data);
+        displayProducts(data);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 }
 
 function displayProducts(products) {
     const productList = document.getElementById('product-list');
+    const productItem = document.getElementById('product-item');
     productList.innerHTML = '';
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
         if (products[i]) {
             const product = products[i];
+
             const productItem = document.createElement('div');
             productItem.classList.add('product-item');
 
@@ -40,3 +40,19 @@ function displayProducts(products) {
         }
     }
 }
+
+const lipstickCard = document.getElementById('lipstick-card');
+const foundationCard = document.getElementById('foundation-card');
+const mascaraCard = document.getElementById('mascara-card');
+
+lipstickCard.addEventListener('click', function () {
+    document.location.href = 'categorypage.html';
+});
+
+foundationCard.addEventListener('click', function () {
+    document.location.href = 'categorypage.html';
+});
+
+mascaraCard.addEventListener('click', function () {
+    document.location.href = 'categorypage.html';
+});
