@@ -2,170 +2,132 @@
     "products": [
         {
             "id": 1,
-            "name": "Lipstick 1",
+            "name": "Clinique",
+            "description": "Almost Lipstick Black Honey",
             "price": 12.99,
-            "image_link": "/images/lipstickp3.jpg",
+            "image_link": "/images/clinique.jpg",
             "category": "lipstick"
         },
         {
             "id": 2,
-            "name": "Lipstick 2",
+            "name": "Yves Saint Laurent",
+            "description": "Loveshine Wet Shine Lipstick 44 Nude Lavalliére",
             "price": 14.99,
-            "image_link": "/images/lipstickp3.jpg",
+            "image_link": "/images/ysl.jpg",
             "category": "lipstick"
         },
         {
             "id": 3,
-            "name": "Lipstick 3",
+            "name": "MAC",
+            "description": "Macximal Sleep Satin Lipstick 24 Cremé D'Nude",
             "price": 13.49,
-            "image_link": "/images/lipstickp3.jpg",
+            "image_link": "/images/mac.jpg",
             "category": "lipstick"
         },
         {
             "id": 4,
-            "name": "Lipstick 4",
+            "name": "Dior",
+            "description": "Rogue Dior Coloured Lip Balm 001 Diormidnight",
             "price": 11.99,
-            "image_link": "/images/lipstickp3.jpg",
+            "image_link": "/images/dior.jpg",
             "category": "lipstick"
         },
         {
             "id": 5,
-            "name": "Lipstick 5",
+            "name": "LH cosmetics",
+            "description": "Fantastick Goldstone",
             "price": 15.99,
-            "image_link": "http://localhost:3000/lipstickp5.jpg",
+            "image_link": "/images/LH.jpg",
             "category": "lipstick"
         },
+
         {
             "id": 6,
-            "name": "Lipstick 6",
-            "price": 10.99,
-            "image_link": "http://localhost:3000/lipstickp6.jpg",
-            "category": "lipstick"
+            "name": "La Mer",
+            "price": 25.99,
+            "description": "The Soft Fluid Long Wear Foundation SPF 20 210 Bisque",
+            "image_link": "/images/lamer.jpg",
+            "category": "foundation"
         },
         {
             "id": 7,
-            "name": "Lipstick 7",
-            "price": 12.49,
-            "image_link": "http://localhost:3000/lipstickp7.jpg",
-            "category": "lipstick"
+            "name": "Estée Lauder",
+            "price": 27.49,
+            "description": "Double Wear Stay-In-Place Makeup Foundation",
+            "image_link": "/images/esteelauder.jpg",
+            "category": "foundation"
         },
         {
             "id": 8,
-            "name": "Lipstick 8",
-            "price": 9.99,
-            "image_link": "http://localhost:3000/lipstickp8.jpg",
-            "category": "lipstick"
+            "name": "SENSAI",
+            "description": "Silky Bronze Natural Veil Compact Powder 3",
+            "price": 24.99,
+            "image_link": "/images/sensaifoundation2.jpg",
+            "category": "foundation"
         },
         {
             "id": 9,
-            "name": "Foundation 1",
-            "price": 25.99,
-            "image_link": "http://localhost:3000/foundation1.jpg",
+            "name": "DIOR",
+            "description": "Forever Skin Perfect Foundation Stick 2N",
+            "price": 22.99,
+            "image_link": "/images/diorfoundation.jpg",
             "category": "foundation"
         },
         {
             "id": 10,
-            "name": "Foundation 2",
-            "price": 27.49,
-            "image_link": "http://localhost:3000/foundation2.jpg",
+            "name": "Lancóme",
+            "description": "Teint Miracle Foundation 02 Beige Lys Rosé",
+            "price": 26.99,
+            "image_link": "/images/lancomefoundation.jpg",
             "category": "foundation"
         },
         {
             "id": 11,
-            "name": "Foundation 3",
-            "price": 24.99,
-            "image_link": "http://localhost:3000/foundation3.jpg",
+            "name": "Armani",
+            "description": "Luminous Silk Foundation 4",
+            "price": 21.49,
+            "image_link": "/images/armanifoundation.jpg",
             "category": "foundation"
         },
         {
             "id": 12,
-            "name": "Foundation 4",
-            "price": 22.99,
-            "image_link": "http://localhost:3000/foundation4.jpg",
+            "name": "SENSAI",
+            "price": 23.49,
+            "description": "Cellular Performance Cream Foundation CF12 Soft Beige",
+            "image_link": "/images/sensai.jpg",
             "category": "foundation"
         },
+
         {
             "id": 13,
-            "name": "Foundation 5",
-            "price": 26.99,
-            "image_link": "http://localhost:3000/foundation5.jpg",
-            "category": "foundation"
+            "name": "Lancóme",
+            "description": "Hypnôse Volume-Á-Porter Mascara 01 Black",
+            "price": 11.99,
+            "image_link": "/images/lancomemascara.jpg",
+            "category": "mascara"
         },
         {
             "id": 14,
-            "name": "Foundation 6",
-            "price": 21.49,
-            "image_link": "http://localhost:3000/foundation6.jpg",
-            "category": "foundation"
+            "name": "Clinique",
+            "description": "Lash Power Mascara Black-Onyx",
+            "price": 9.99,
+            "image_link": "/images/cliniquemascara.jpg",
+            "category": "mascara"
         },
         {
             "id": 15,
-            "name": "Foundation 7",
-            "price": 23.49,
-            "image_link": "http://localhost:3000/foundation7.jpg",
-            "category": "foundation"
+            "name": "L'oreal Paris",
+            "description": "Telescopic Mascara Black",
+            "price": 13.99,
+            "image_link": "/images/lorealmascara.jpg",
+            "category": "mascara"
         },
         {
             "id": 16,
-            "name": "Foundation 8",
-            "price": 20.99,
-            "image_link": "http://localhost:3000/foundation8.jpg",
-            "category": "foundation"
-        },
-        {
-            "id": 17,
-            "name": "Mascara 1",
-            "price": 10.99,
-            "image_link": "http://localhost:3000/mascara1.jpeg",
-            "category": "mascara"
-        },
-        {
-            "id": 18,
-            "name": "Mascara 2",
-            "price": 12.49,
-            "image_link": "http://localhost:3000/mascara2.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 19,
-            "name": "Mascara 3",
-            "price": 11.99,
-            "image_link": "http://localhost:3000/mascara3.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 20,
-            "name": "Mascara 4",
-            "price": 9.99,
-            "image_link": "http://localhost:3000/mascara4.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 21,
-            "name": "Mascara 5",
-            "price": 13.99,
-            "image_link": "http://localhost:3000/mascara5.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 22,
-            "name": "Mascara 6",
+            "name": "Maybelline",
+            "description": "Lash Sensational Sky High Cosmic Mascara Black",
             "price": 14.49,
-            "image_link": "http://localhost:3000/mascara6.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 23,
-            "name": "Mascara 7",
-            "price": 8.99,
-            "image_link": "http://localhost:3000/mascara7.jpg",
-            "category": "mascara"
-        },
-        {
-            "id": 24,
-            "name": "Mascara 8",
-            "price": 10.49,
-            "image_link": "http://localhost:3000/mascara8.jpg",
+            "image_link": "/images/maybellinemascara.jpg",
             "category": "mascara"
         }
     ]

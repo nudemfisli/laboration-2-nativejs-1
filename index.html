@@ -9,6 +9,10 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -17,7 +21,7 @@
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Makeup Store</a>
+                <a class="navbar-brand" href="index.html">Makeup Store</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -31,13 +35,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"></li>
                         <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#"
-                                >News</a
-                            >
+                            <a class="nav-link" href="#">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Bestsellers</a>
@@ -54,15 +54,19 @@
                     </ul>
                     <form class="d-flex">
                         <input
-                            class="form-control me-2"
+                            class="form-control me-2 custom-search-bar"
                             type="search"
                             placeholder="Search"
                             aria-label="Search"
                         />
-                        <button class="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
                     </form>
+
+                    <img
+                        class="cart"
+                        src="images/7124073_shopping_bag_icon.svg"
+                        alt="Shopping bag icon"
+                    />
+                    <span id="cart-count" class="cart-count">0</span>
                 </div>
             </div>
         </nav>
@@ -78,21 +82,21 @@
                     <div class="carousel-item active">
                         <img
                             class="d-block w-100"
-                            src="images/lipstick.png"
+                            src="images/lancomebanner.jpg"
                             alt="Text about new lip plumpers from Maybelline to the left, image of lip plumbers to the right"
                         />
                     </div>
                     <div class="carousel-item">
                         <img
                             class="d-block w-100"
-                            src="/images/salemakeup.webp"
+                            src="/images/diorbanner3.jpg"
                             alt="Products with giftbox and a sale sign"
                         />
                     </div>
                     <div class="carousel-item">
                         <img
                             class="d-block w-100"
-                            src="/images/makeupglitter.png"
+                            src="/images/benefitbanner.jpg"
                             alt="Woman with silver glitter on eyebrows and lips"
                         />
                     </div>
@@ -124,31 +128,65 @@
             </div>
         </section>
         <!-- NEW ARRIVALS -->
+
         <section id="new-arrivals-container">
-            <h1>New Arrivals</h1>
+            <h1 id="new-arrivals-header">New Arrivals</h1>
             <div class="product-list" id="product-list">
                 <div class="product-item" id="product-item"></div>
             </div>
         </section>
-        <section class="discount-now">
-            <!-- DISCOUNT - ADD IMAGES HERE-->
-            <img src="images/makeupglitter.png" alt="" />
-            <img src="images/makeupglitter.png" alt="" />
+
+        <!-- FOUNDATION FINDER -->
+        <section class="foundation-finder">
+            <h2 class="finder-header">Foundation Shade Finder</h2>
+            <div class="image-container">
+                <img
+                    src="images/skintonefoundation.jpg"
+                    alt="Foundation Shade Finder"
+                />
+            </div>
+            <div class="finder-container">
+                <p class="finder-text">
+                    Find your best shade, along with complexion must-haves
+                    perfect for your skin tone. <br />
+                    All in just 3 simple steps.
+                </p>
+                <button class="match-button">Match me</button>
+            </div>
         </section>
+
+        <section id="bestseller-product-container">
+            <h2 class="bestseller-header">Bestsellers</h2>
+            <div class="bestseller-list" id="bestseller-list">
+                <div class="bestseller-product" id="bestseller-product"></div>
+            </div>
+        </section>
+
         <!-- SHOP BY CATEGORY -->
-        <section id="shop-by-category">
-            <h2>Shop by Category</h2>
-            <div class="category-card" id="lipstick-card">
-                <img src="/images/lipstickp3.jpg" alt="Lipsticks" />
-                <h3>Lipsticks</h3>
+        <section class="category-layout">
+            <h2 id="category-header">Shop by Category</h2>
+            <!-- Left Image -->
+            <div class="image-left" id="lipstick-card">
+                <img
+                    src="images/lipscategory.jpg"
+                    alt="Lipstick category: girl with red lips"
+                />
+                <p class="category-text">Lips</p>
             </div>
-            <div class="category-card" id="foundation-card">
-                <img src="/images/lipstickp3.jpg" alt="Foundations" />
-                <h3>Foundations</h3>
-            </div>
-            <div class="category-card" id="mascara-card">
-                <img src="/images/lipstickp3.jpg" alt="Mascaras" />
-                <h3>Mascaras</h3>
+
+            <!-- Right Images -->
+            <div class="image-right">
+                <div class="right-top" id="foundation-card">
+                    <img
+                        src="images/foundationfinder2.jpg"
+                        alt="Foundation swap on cheek"
+                    />
+                    <p class="category-text">Face</p>
+                </div>
+                <div class="right-bottom" id="mascara-card">
+                    <img src="images/mascaracategory.jpg" alt="Blue mascara" />
+                </div>
+                <p class="category-text">Mascara</p>
             </div>
         </section>
 
@@ -191,7 +229,9 @@
             </div>
         </footer>
         <!-- BACK TO TOP -->
-        <button id="myBtn" title="Go to top">&#8679;</button>
+        <button id="my-Btn" title="Go to top" onclick="topFunction()">
+            &#8679;
+        </button>
         <script src="index.js" type="module"></script>
     </body>
 </html>
