@@ -54,6 +54,10 @@
     padding-right: 3rem;
 }
 
+.account-page-icon {
+    padding-right: 1rem;
+}
+
 /* CAROUSEL BANNER */
 #banner-carousel {
     width: 100%;
@@ -113,6 +117,8 @@ p {
     height: 100%;
     padding-right: 2rem;
     gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .product-item img {
@@ -211,7 +217,7 @@ p {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     border: 2px solid #ebdae7;
-    background-color: #f4f1efe5;
+    background-color: rgb(254, 241, 252);
     z-index: 10;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -319,7 +325,7 @@ p {
     list-style-type: none;
     margin-top: 5rem;
     color: black;
-    background-color: #ddcbd95b;
+    background-color: #f8f9fa;
     padding: 2rem 0;
 }
 .footer-content {
@@ -357,12 +363,32 @@ p {
     bottom: 50px;
     right: 50px;
     display: none;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
+
+/* CATEGORY PAGE */
 
 #shop-by-category {
     display: flex;
     flex-direction: row;
     z-index: 99;
+}
+
+/* CATEGORY PAGE HEADERS */
+.categorypage-header,
+.register-header {
+    font-family: 'Hey August', 'Aurora', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Ensure the text is centered */
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .foundation-list,
@@ -371,9 +397,50 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
     overflow-x: hidden;
-    overflow-y: auto;
-    max-width: 100%;
+    overflow-y: hidden;
+    max-width: 2200px;
+    margin-left: 10%; /* Automatically adjusts margin on the left side */
+    padding-left: 10px; /* Optional: adds a small padding to the left side */
+    padding-right: 10px; /* Optional: adds a small padding to the right side */
+}
+
+/* SIGN IN PAGE */
+.form-register,
+.register-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 35rem;
+    margin-top: 4rem;
+    background-color: #ffeefb48;
+    border: 5px solid #e9c3e151;
+    border-radius: 15px;
+    padding: 2.5rem;
+}
+
+.terms a,
+.sign-in {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.delete-btn {
+    margin-top: 0.5rem;
+}
+
+.register-btn,
+.delete-btn {
+    background-color: white;
+    border-color: #e3a2d598;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

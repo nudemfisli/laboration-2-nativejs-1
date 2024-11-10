@@ -49,11 +49,16 @@ function displayCategoryProducts(categoryId, products) {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.description}</p>
                 <p>Price: $${product.price}</p>
-                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-primary add-to-cart" data-product-id="${product.id}">Add to Cart</button>
             </div>
         </div>
     `;
 
+        const addToCartButton = productItem.querySelector('.add-to-cart');
+        addToCartButton.addEventListener('click', function () {
+            const productId = this.getAttribute('data-product-id');
+            addToCart(productId); // Pass the product ID to the addToCart function
+        });
         productList.appendChild(productItem);
     }
 }

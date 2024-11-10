@@ -8,7 +8,7 @@ async function fetchNewArrivals() {
     try {
         const response = await fetch('http://localhost:3000/products');
         if (!response.ok) {
-            throw newError(`HTTP error! Status: ${response.status}`);
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
         console.log('Fetched data:', data);
@@ -21,7 +21,7 @@ async function fetchNewArrivals() {
 // NEW ARRIVALS
 function displayProducts(products) {
     const productList = document.getElementById('product-list');
-    const productItem = document.getElementById('product-item');
+    const productItem = document.getElementsByClassName('product-item');
     productList.innerHTML = '';
 
     for (let i = 0; i < 4; i++) {
@@ -46,7 +46,6 @@ function displayProducts(products) {
             productList.appendChild(productItem);
         }
     }
-    addToCartEventListeners();
 }
 
 // BESTSELLERS
@@ -61,11 +60,14 @@ async function displayBestsellerProducts() {
         const data = await response.json();
         console.log('Fetched products:', data);
 
+        // Get random products from the fetched data
         const randomProducts = getRandomProducts(data, 4);
 
+        // Clear the current list of products in the UI
         const bestsellerList = document.getElementById('bestseller-list');
         bestsellerList.innerHTML = '';
 
+        // Loop through the random products and append them to the DOM
         randomProducts.forEach((product) => {
             const productItem = document.createElement('div');
             productItem.classList.add('product-item');
@@ -84,13 +86,10 @@ async function displayBestsellerProducts() {
 
             bestsellerList.appendChild(productItem);
         });
-
-        addToCartEventListeners();
     } catch (error) {
         console.error('Error fetching products:', error);
     }
 }
-
 function getRandomProducts(products, n) {
     const randomProducts = [];
     while (randomProducts.length < n) {
@@ -110,11 +109,11 @@ const foundationCard = document.getElementById('foundation-card');
 const mascaraCard = document.getElementById('mascara-card');
 
 lipstickCard.addEventListener('click', function () {
-    document.location.href = 'categorypage.html';
+    document.location.href = 'categorypage.html?category=lipstick';
 });
 
 foundationCard.addEventListener('click', function () {
-    document.location.href = 'categorypage.html';
+    document.location.href = 'categorypage.html?category=foundation';
 });
 
 mascaraCard.addEventListener('click', function () {
@@ -141,39 +140,3 @@ myBtn.addEventListener('click', function () {
         behavior: 'smooth'
     });
 });
-
-// CART
-let cartCount = 0;
-let cart = {};
-
-localStorage.setItem('cartId', cartId);
-const cartId = localStorage.getItem('cartId');
-if (cartId) {
-    fetch(`/cart?cartId=${cartId}`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-        .then((response) => response.json())
-        .then(({ cart }) => {});
-}
-
-document
-    .getElementById('add-to-cart-button')
-    .addEventListener('click', addToCart);
-document
-    .getElementById('remove-from-cart-button')
-    .addEventListener('click', removeFromCart);
-document
-    .getElementById('quantity-change-button')
-    .addEventListener('change', updateQuantity);
-
-function addToCart(cart) {
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function () {
-            cartCount++;
-            document.getElementById('cart-count').textContent = cartCount;
-        });
-    }
-}
