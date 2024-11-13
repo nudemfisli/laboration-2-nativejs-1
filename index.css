@@ -24,7 +24,6 @@
 .navbar-nav {
     display: flex;
     justify-content: space-evenly;
-
     width: 100%;
 }
 
@@ -277,7 +276,6 @@ p {
 }
 
 .image-left img {
-    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -286,7 +284,6 @@ p {
     font-family: 'Rulingpen', Arial, Helvetica, sans-serif;
     display: flex;
     font-size: 2.5rem;
-    color: black;
     margin-left: 80px;
     color: rgb(111, 14, 48);
 }
@@ -296,13 +293,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     flex: 1;
 }
 
 /* Top right image */
 .right-top img {
-    height: auto;
     border-radius: 10px;
 }
 
@@ -398,12 +394,10 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-width: 2200px;
-    margin-left: 10%; /* Automatically adjusts margin on the left side */
-    padding-left: 10px; /* Optional: adds a small padding to the left side */
-    padding-right: 10px; /* Optional: adds a small padding to the right side */
+    max-width: auto;
+    margin-left: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* SIGN IN PAGE */
@@ -443,4 +437,79 @@ p {
     border-color: #e3a2d598;
     font-size: 1.1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Product page */
+
+.product-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    margin-left: -20rem;
+}
+
+#product-image img {
+    max-width: 100%;
+    width: 35rem;
+    height: 35rem;
+    margin-right: 3rem;
+    object-fit: contain;
+}
+
+.product-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rating-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+#ratings-chart {
+    max-width: 250px;
+    height: 250px;
+    margin-top: -3rem;
+}
+
+#product-description {
+    font-size: 20px;
+}
+
+.reviews-header {
+    font-family: 'RulingPen';
+    font-size: 3rem;
+    color: rgb(111, 14, 48);
+    margin-left: 1rem;
+    overflow: visible;
+    margin-bottom: 3.7rem;
+}
+
+.buy-now {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background-color: #e4e4e4;
+    font-weight: bold;
+    border: none;
+}
+
+.buy-now:hover {
+    background-color: #e9c3e184;
 }

@@ -32,15 +32,17 @@ function displayProducts(products) {
             productItem.classList.add('product-item');
 
             productItem.innerHTML = `
-            <div class="card" style="width: 18rem; height: 500px">
-                <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text">${product.description}</p>
-                    <p>Price: $${product.price}</p>
-                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            <a href="productpage.html?id=${product.id}" class="product-link">
+                <div class="card" style="width: 18rem; height: 500px">
+                    <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <p>Price: $${product.price}</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
                 </div>
-            </div>
+            </a>
         `;
 
             productList.appendChild(productItem);
@@ -60,29 +62,34 @@ async function displayBestsellerProducts() {
         const data = await response.json();
         console.log('Fetched products:', data);
 
-        // Get random products from the fetched data
         const randomProducts = getRandomProducts(data, 4);
 
-        // Clear the current list of products in the UI
         const bestsellerList = document.getElementById('bestseller-list');
         bestsellerList.innerHTML = '';
 
-        // Loop through the random products and append them to the DOM
         randomProducts.forEach((product) => {
             const productItem = document.createElement('div');
             productItem.classList.add('product-item');
 
             productItem.innerHTML = `
-                <div class="card" style="width: 18rem; height: 500px">
-                    <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${product.name}</h5>
-                        <p class="card-text">${product.description}</p>
-                        <p>Price: $${product.price}</p>
-                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <a href="productpage.html?id=${product.id}" class="product-link">
+                    <div class="card" style="width: 18rem; height: 500px">
+                        <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text">${product.description}</p>
+                            <p>Price: $${product.price}</p>
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        </div>
                     </div>
-                </div>
+                </a>
             `;
+
+            // Removing underline when focus
+            const productLinks = document.querySelectorAll('.product-link');
+            productLinks.forEach((link) => {
+                link.style.textDecoration = 'none';
+            });
 
             bestsellerList.appendChild(productItem);
         });
