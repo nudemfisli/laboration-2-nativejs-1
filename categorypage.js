@@ -61,6 +61,12 @@ function displayCategoryProducts(categoryId, products) {
             link.style.textDecoration = 'none'; // Remove underline
         });
 
+        const buttons = document.querySelectorAll('.btn.add-to-cart');
+        buttons.forEach((button) => {
+            button.style.textDecoration = 'none';
+            button.style.border = '1px solid black';
+        });
+
         productList.appendChild(productItem);
     }
 }

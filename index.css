@@ -147,10 +147,10 @@ p {
 
 .product-item button {
     padding: 3px;
-    background-color: #ffffff;
+    background-color: #ebdae7;
     color: rgb(63, 45, 45);
-    border-radius: 0px;
-    border-color: #ebdae7;
+    border-radius: 3px;
+    border-color: 1px solid #000000;
     box-shadow: none;
     font-size: 16px;
     text-align: center;
@@ -160,7 +160,7 @@ p {
 }
 
 .product-item button:hover {
-    background-color: #ebdae7;
+    background-color: #dfbad7cc;
     border: #fcf5f3;
     color: black;
 }
@@ -204,7 +204,7 @@ p {
     padding: 3rem;
     z-index: 5;
     max-width: 40%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -215,16 +215,18 @@ p {
     padding: 5px 20px;
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    border: 2px solid #ebdae7;
-    background-color: rgb(254, 241, 252);
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #ffffff;
     z-index: 10;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 3rem;
 }
 
 .match-button:hover {
     background-color: #ebdae7;
-    border: 2px solid #ebdae7;
+    border: 2px solid black;
 }
 
 /* BESTSELLERS */
@@ -400,45 +402,6 @@ p {
     padding-right: 10px;
 }
 
-/* SIGN IN PAGE */
-.form-register,
-.register-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.register-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 35rem;
-    margin-top: 4rem;
-    background-color: #ffeefb48;
-    border: 5px solid #e9c3e151;
-    border-radius: 15px;
-    padding: 2.5rem;
-}
-
-.terms a,
-.sign-in {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-}
-
-.delete-btn {
-    margin-top: 0.5rem;
-}
-
-.register-btn,
-.delete-btn {
-    background-color: white;
-    border-color: #e3a2d598;
-    font-size: 1.1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 /* Product page */
 
 .product-content {
@@ -505,11 +468,12 @@ p {
     padding-bottom: 2px;
     font-size: 1.1rem;
     margin-top: 1rem;
-    background-color: #e4e4e4;
+    background-color: #e9c3e184;
     font-weight: bold;
     border: none;
+    border-radius: 3px;
 }
 
 .buy-now:hover {
-    background-color: #e9c3e184;
+    background-color: #dfbad7;
 }

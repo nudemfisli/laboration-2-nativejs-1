@@ -72,23 +72,29 @@ async function displayBestsellerProducts() {
             productItem.classList.add('product-item');
 
             productItem.innerHTML = `
-                <a href="productpage.html?id=${product.id}" class="product-link">
-                    <div class="card" style="width: 18rem; height: 500px">
-                        <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">${product.description}</p>
-                            <p>Price: $${product.price}</p>
-                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
-                        </div>
+            <a href="productpage.html?id=${product.id}" class="product-link">
+                <div class="card" style="width: 18rem; height: 500px">
+                    <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <p>Price: $${product.price}</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
                     </div>
-                </a>
-            `;
+                </div>
+            </a>
+        `;
 
-            // Removing underline when focus
+            // Remove underline from product links
             const productLinks = document.querySelectorAll('.product-link');
             productLinks.forEach((link) => {
-                link.style.textDecoration = 'none';
+                link.style.textDecoration = 'none'; // Remove the underline
+            });
+
+            const buttons = document.querySelectorAll('.btn.add-to-cart');
+            buttons.forEach((button) => {
+                button.style.textDecoration = 'none';
+                button.style.border = '1px solid black';
             });
 
             bestsellerList.appendChild(productItem);

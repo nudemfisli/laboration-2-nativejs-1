@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Aurora';
+    src: url('fonts/Aurora.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rulingpen';
+    src: url('fonts/Rulingpen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 0;
+    font-family: 'Aurora', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000 !important;
+    font-size: 16px;
+}
+
+.d-flex {
+    margin-right: 3rem;
+}
+.navbar-brand {
+    font-family: 'Aurora';
+    font-size: 2rem !important;
+}
+
+#cart-count {
+    padding-right: 3rem;
+}
+
+.account-page-icon {
+    padding-right: 1rem;
+}
+
+/* CONTACT */
+
+.main-content {
+    background-color: #f8f2f3;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text,
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: visible;
+}
+
+.contact-form {
+    width: 50rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.contact {
+    font-family: 'Aurora', Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+}
+
+.form-control {
+    margin-top: -0.5rem;
+    width: 100%;
+}
+
+.contact-Btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background-color: #dfbad7cc;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.contact-Btn:hover {
+    background-color: #dfbad7;
+}
+
+/* REGISTER PAGE */
+
+.main-account-page {
+    background-color: #f8f2f3;
+}
+.form-register,
+.register-text,
+.container-signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.register-header {
+    font-family: 'Aurora', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.register-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 35rem;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 15px;
+    padding: 2.5rem;
+}
+
+.terms a,
+.sign-in {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.register-delete-buttons {
+    display: flex;
+}
+.register-btn,
+.delete-btn {
+    background-color: #e5ccdfcc;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 3px;
+}
+.register-btn {
+    margin-right: 1rem;
+}
+
+.register-btn:hover,
+.delete-btn:hover {
+    background-color: #dfbad7;
+}
+/* FOOTER */
+.footer {
+    list-style-type: none;
+    color: black;
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+.footer-content {
+    list-style-type: none;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 10rem;
+}
+
+.footer-content a {
+    color: black;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.footer-content a:hover {
+    color: grey;
+}
+
+.footer ul {
+    list-style-type: none;
+}
