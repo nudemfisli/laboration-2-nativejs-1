@@ -33,12 +33,12 @@ function displayProducts(products) {
 
             productItem.innerHTML = `
             <a href="productpage.html?id=${product.id}" class="product-link">
-                <div class="card" style="width: 18rem; height: 500px">
+                <div class="card" ">
                     <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
-                        <p>Price: $${product.price}</p>
+                        <p><b>Price: $${product.price}</b></p>
                         <button class="btn btn-primary add-to-cart">Add to Cart</button>
                     </div>
                 </div>
@@ -73,12 +73,13 @@ async function displayBestsellerProducts() {
 
             productItem.innerHTML = `
             <a href="productpage.html?id=${product.id}" class="product-link">
-                <div class="card" style="width: 18rem; height: 500px">
+                <div class="card"
+                ">
                     <img src="${product.image_link}" class="card-img-top" alt="${product.name}">
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.description}</p>
-                        <p>Price: $${product.price}</p>
+                        <p><b>Price: $${product.price}</b></p>
                         <button class="btn btn-primary add-to-cart">Add to Cart</button>
                     </div>
                 </div>

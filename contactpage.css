@@ -127,6 +127,10 @@ label {
 
 .main-account-page {
     background-color: #f8f2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .form-register,
 .register-text,
@@ -136,6 +140,7 @@ label {
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
 }
 
 .register-header {
@@ -160,11 +165,7 @@ label {
     font-weight: bold;
 }
 
-.register-delete-buttons {
-    display: flex;
-}
-.register-btn,
-.delete-btn {
+.register-btn {
     background-color: #e5ccdfcc;
     border: 1px solid black;
     font-size: 1.1rem;
@@ -174,13 +175,14 @@ label {
     height: 30px;
     width: 250px;
     border-radius: 3px;
-}
-.register-btn {
-    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.register-btn:hover,
-.delete-btn:hover {
+.register-btn:hover {
     background-color: #dfbad7;
 }
 /* FOOTER */
@@ -218,3 +220,118 @@ label {
 .footer ul {
     list-style-type: none;
 }
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-collapse .account-page-icon img,
+    .navbar-collapse .cart img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* REGISTER */
+
+    .register-header {
+        font-size: 2rem;
+        overflow: visible;
+    }
+
+    .register-container {
+        width: 90%;
+        max-width: 25rem;
+        margin-top: 2rem;
+        border: none;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    /* Contact us */
+
+    .main-content {
+        background-color: #f8f2f3;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .contact-text,
+    .contact {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+        max-width: 35rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-container {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        margin-top: -0.5rem;
+        width: 100%;
+    }
+
+    .contact-Btn {
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-Btn:hover {
+        background-color: #dfbad7;
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: start;
+        text-align: start;
+        width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+        margin: 0;
+    }
+
+    .footer h4 {
+        font-size: 0.8rem;
+    }
+
+    .footer-content {
+        margin-bottom: 1rem;
+        font-size: 0.6rem;
+        padding: 0;
+    }
+}
+
+/* Validerad 15/11-2024 */

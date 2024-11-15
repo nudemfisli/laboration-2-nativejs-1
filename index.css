@@ -91,46 +91,71 @@ p {
 }
 
 /* NEW ARRIVALS */
-
 #new-arrivals-header,
 #category-header {
     font-family: 'Aurora', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 28px !important;
-    margin-left: 30px;
+    margin-left: 25px;
     padding-top: 50px;
     margin-top: 2rem;
     overflow: hidden;
 }
 
-#product-list,
-#product-item,
-.lipstick-list,
-.foundation-list,
-.mascara-list {
+.product-item,
+.bestseller-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    text-align: center;
+    object-fit: contain;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+#product-list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
+    margin-right: 2rem;
     margin-top: -1rem;
     text-align: center;
     align-items: center;
     height: 100%;
-    padding-right: 2rem;
     gap: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-.product-item img {
-    height: 300px;
+.product-item img,
+.bestseller-product img,
+#bestseller-list img,
+#product-list img,
+#foundation-list img,
+#mascara-list img {
+    width: 100%;
+    height: 18rem;
     object-fit: cover;
+    display: block;
+}
+
+.card {
+    width: 18rem;
+    height: 30rem;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-body {
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    padding: 0;
+    text-align: center;
 }
 
 .card-title {
@@ -139,6 +164,8 @@ p {
 
 .card-text {
     font-size: 1rem;
+    width: 200px;
+    text-align: center;
 }
 
 .card-body p {
@@ -146,22 +173,23 @@ p {
 }
 
 .product-item button {
-    padding: 3px;
+    padding: 3px 20px;
     background-color: #ebdae7;
-    color: rgb(63, 45, 45);
+    color: rgb(0, 0, 0);
     border-radius: 3px;
-    border-color: 1px solid #000000;
+    border: 1px solid #000000;
     box-shadow: none;
     font-size: 16px;
     text-align: center;
     display: inline-block;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    box-sizing: border-box;
+    margin-top: auto;
 }
 
 .product-item button:hover {
     background-color: #dfbad7cc;
-    border: #fcf5f3;
+    border: 1px solid #fcf5f3;
     color: black;
 }
 
@@ -233,7 +261,7 @@ p {
 .bestseller-list {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: -1rem;
     text-align: center;
     align-items: center;
@@ -245,14 +273,15 @@ p {
 .bestseller-header {
     font-family: 'Aurora';
     font-size: 28px !important;
-    margin-left: 40px;
+    margin-left: 25px;
     padding-top: 50px;
     margin-top: 2rem;
     overflow: hidden;
 }
 
 .product-item img {
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -378,10 +407,10 @@ p {
 .categorypage-header,
 .register-header {
     font-family: 'Hey August', 'Aurora', Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #333;
-    text-align: center; /* Ensure the text is centered */
+    text-align: center;
     margin-top: 1rem;
     margin-bottom: 20px;
     width: 100%;
@@ -396,10 +425,16 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: auto;
     margin-left: 10%;
     padding-left: 10px;
     padding-right: 10px;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: -1rem;
+    text-align: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* Product page */
@@ -477,3 +512,243 @@ p {
 .buy-now:hover {
     background-color: #dfbad7;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-collapse .account-page-icon img,
+    .navbar-collapse .cart img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* BANNER */
+
+    #banner-carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    /* NEW ARRIVALS and BESTSELLER */
+    #new-arrivals-header,
+    #bestseller-product-container > h2 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+
+    .lipstick-list,
+    .foundation-list,
+    .mascara-list,
+    #product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .bestseller-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product-item img,
+    .bestseller-product img,
+    #product-list img,
+    #foundation-list img,
+    #mascara-list img,
+    #bestseller-product-container .product-item img {
+        width: 100%;
+        height: 9rem;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 10rem;
+        height: 15rem;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+        overflow: visible;
+        margin-bottom: 0;
+    }
+
+    .card-text,
+    #product-list > div:nth-child(1) > a > div > div > p:nth-child(3) > b {
+        font-size: 0.5rem;
+        width: 90%;
+        overflow: visible;
+        margin-top: 0;
+    }
+
+    .product-item button {
+        padding: 2px 9px;
+        font-size: 9px;
+        width: 90%;
+    }
+
+    /* FOUNDATION FINDER */
+
+    .finder-header {
+        position: relative;
+        font-size: 1.1rem;
+        text-align: center;
+        font-family: 'Aurora';
+        overflow: visible;
+    }
+    .foundation-finder {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        margin-top: 1rem;
+        background-color: #efd7ea3a;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .image-container {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 0;
+        display: flex;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+    .finder-text {
+        display: none;
+    }
+
+    .match-button {
+        position: absolute;
+        width: 150px;
+        padding: 0 0;
+        top: 30px;
+        left: 210px;
+        z-index: 1;
+        background-color: #ffffff97;
+    }
+
+    /* SHOP BY CATEGORY */
+    #category-header {
+        font-family: 'Hey August', 'Aurora', Arial, Helvetica, sans-serif;
+        font-size: 1.2rem !important;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-top: -4rem;
+    }
+
+    .category-layout {
+        background-color: #efd7ea3a;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .image-left img,
+    .image-right img {
+        border-radius: 10px;
+        object-fit: cover;
+        width: 230px;
+        height: 200px;
+    }
+
+    .category-text {
+        font-family: 'Rulingpen', Arial, Helvetica, sans-serif;
+        display: flex;
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(111, 14, 48);
+        overflow: visible;
+    }
+
+    /* FOOTER */
+    .footer {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: start;
+        text-align: start;
+        width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+        margin: 0;
+    }
+
+    .footer h4 {
+        font-size: 0.8rem;
+    }
+
+    .footer-content {
+        margin-bottom: 1rem;
+        font-size: 0.6rem;
+        padding: 0;
+    }
+
+    /* CATEGORY PAGE */
+    .categorypage-header,
+    .register-header {
+        font-family: 'Hey August', 'Aurora', Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 20px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+/* Validerad 15/11-2024 */
