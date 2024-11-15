@@ -505,7 +505,7 @@ p {
     margin-top: 1rem;
     background-color: #e9c3e184;
     font-weight: bold;
-    border: none;
+    border: 1px solid black !important;
     border-radius: 3px;
 }
 
@@ -748,6 +748,93 @@ p {
         width: 100%;
         overflow-x: hidden;
         overflow-y: hidden;
+    }
+
+    /* Product page */
+
+    .product-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+    #product-image img {
+        max-width: 100%;
+        width: 15rem;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rating-content {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ratings-chart {
+        width: auto;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    #product-name {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #product-price {
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    #product-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .reviews-header {
+        font-family: 'RulingPen';
+        font-size: 1.8rem;
+        color: rgb(111, 14, 48);
+    }
+
+    .buy-now {
+        padding: 0.3rem 1.3rem;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        background-color: #e9c3e184;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .buy-now:hover {
+        background-color: #dfbad7;
     }
 }
 
